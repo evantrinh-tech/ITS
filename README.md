@@ -1,4 +1,4 @@
-# 🚦 Hệ thống Phát hiện Sự cố Giao thông Tự động
+#  Hệ thống Phát hiện Sự cố Giao thông Tự động
 
 Hệ thống tự động phát hiện sự cố giao thông (tai nạn, xe hỏng, sự kiện đặc biệt) từ ảnh camera sử dụng Deep Learning và Neural Network. Hệ thống được xây dựng với kiến trúc end-to-end từ xử lý ảnh/video đến dashboard quản lý và API tích hợp.
 
@@ -8,14 +8,14 @@ Hệ thống sử dụng **Convolutional Neural Network (CNN)** với **Transfer
 
 ### Đặc điểm nổi bật
 
-- ✅ **Deep Learning**: CNN với Transfer Learning (MobileNetV2, ResNet50, VGG16)
-- ✅ **Real-time Processing**: Xử lý ảnh/video với latency thấp
-- ✅ **Temporal Confirmation**: Giảm false alarm bằng xác nhận qua nhiều frames
-- ✅ **Web Dashboard**: Giao diện Streamlit trực quan, dễ sử dụng
-- ✅ **REST API**: FastAPI với Swagger documentation
-- ✅ **Database**: PostgreSQL để lưu trữ incidents và predictions
-- ✅ **MLflow Tracking**: Quản lý experiments và model versions
-- ✅ **Production Ready**: Kiến trúc mở rộng, hỗ trợ deployment
+-  **Deep Learning**: CNN với Transfer Learning (MobileNetV2, ResNet50, VGG16)
+-  **Real-time Processing**: Xử lý ảnh/video với latency thấp
+-  **Temporal Confirmation**: Giảm false alarm bằng xác nhận qua nhiều frames
+-  **Web Dashboard**: Giao diện Streamlit trực quan, dễ sử dụng
+-  **REST API**: FastAPI với Swagger documentation
+-  **Database**: PostgreSQL để lưu trữ incidents và predictions
+-  **MLflow Tracking**: Quản lý experiments và model versions
+-  **Production Ready**: Kiến trúc mở rộng, hỗ trợ deployment
 
 ## 🎯 Tính năng chính
 
@@ -91,7 +91,7 @@ Hệ thống sử dụng **Convolutional Neural Network (CNN)** với **Transfer
 
 Xem chi tiết: [requirements.txt](requirements.txt)
 
-## 🚀 Cài đặt và Sử dụng
+##  Cài đặt và Sử dụng
 
 ### Yêu cầu Hệ thống
 
@@ -304,19 +304,19 @@ ITS/
 └── README.md                 # File này
 ```
 
-## 🎓 Huấn luyện Mô hình
+##  Huấn luyện Mô hình
 
 ### Qua Giao diện Web (Streamlit)
 
 1. Mở `http://localhost:8501`
-2. Chọn tab **"🎓 Huấn luyện mô hình CNN"**
+2. Chọn tab **" Huấn luyện mô hình CNN"**
 3. Cấu hình parameters:
    - **Epochs**: Số lần train (khuyến nghị: 10-50)
    - **Batch Size**: Kích thước batch (khuyến nghị: 16-32)
    - **Image Size**: Kích thước ảnh (224x224 hoặc 128x128)
    - **Learning Rate**: Tốc độ học (mặc định: 0.001)
    - **Base Model**: MobileNetV2, ResNet50, hoặc VGG16
-4. Nhấn **"🚀 Bắt đầu huấn luyện"**
+4. Nhấn **" Bắt đầu huấn luyện"**
 5. Theo dõi tiến trình:
    - Loss và Accuracy real-time
    - Training vs Validation metrics
@@ -357,11 +357,11 @@ python pipelines/training_pipeline.py --model RBFNN --simulate
 - **Format**: Keras SavedModel format
 - **Size**: ~20-50MB (tùy base model)
 
-## 🔍 Test Mô hình
+##  Test Mô hình
 
 ### Qua Giao diện Web
 
-1. Chọn tab **"🔍 Test mô hình"**
+1. Chọn tab **" Test mô hình"**
 2. Upload ảnh hoặc chọn từ thư mục
 3. Xem kết quả:
    - **Prediction**: Normal hoặc Incident
@@ -406,7 +406,7 @@ curl -X POST "http://localhost:8000/predict/video" \
 curl -X GET "http://localhost:8000/incidents"
 ```
 
-## 📊 API Endpoints
+##  API Endpoints
 
 ### Health Check
 ```
@@ -450,7 +450,7 @@ Query params:
 
 Xem chi tiết tại: **http://localhost:8000/docs** (Swagger UI)
 
-## 📊 Kiểm tra Trạng thái
+##  Kiểm tra Trạng thái
 
 ```bash
 # Kiểm tra nhanh
@@ -542,7 +542,7 @@ python test_cnn_image.py data/images/incident/img1.jpg
 python test_cnn_video.py path/to/video.mp4
 ```
 
-## 📈 Performance Metrics
+##  Performance Metrics
 
 ### Model Performance
 - **Accuracy**: >90% (target)
@@ -714,7 +714,7 @@ python train_cnn.py
 - Database encryption
 - HTTPS cho production
 
-## 🚀 Deployment
+##  Deployment
 
 ### Development
 ```bash
@@ -770,7 +770,7 @@ Nhóm phát triển:
 - **Code Comments**: Đọc docstrings trong source code
 - **Examples**: Xem `docs/examples/`
 
-**Chúc bạn sử dụng hệ thống thành công! 🚀**
+**Chúc bạn sử dụng hệ thống thành công! **
 
 ---
 
